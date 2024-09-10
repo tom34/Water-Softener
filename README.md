@@ -10,25 +10,28 @@ The goal of this project is to describe how to wire a D1 Mini NodeMCU (ESP8266-1
 
 ## How softener work ? Basic description 
 
-A softener use 3 valves to operate, each valve is dedicated to a specfic function:
-* Valve 1: decompression
-* Valve 2: moving train
-* Valve 3: brine suction
+A softener use 3 solenoid valves to operate, each valve is dedicated to a specfic function:
+* SV1 : decompression (EV3 sur desc.)
+* SV2 : moving train  (EV1 sur desc.)
+* SV3 : brine suction (EV2 sur desc.)
 
 
-`                                                                                  ┏━━━━━━━━━━━━━┓       ━Open
+```
+
+                                                                                   ┏━━━━━━━━━━━━━┓   ━Open
                                                                                    ┃             ┃
- ━━━┫EV1┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━  ━Closed (EV3 sur desc.)
-     Decompression                                                                 :
+ ━━━┫SV1┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━  ━Closed
+                                                                                   :
                                                                                    : 
-            ┏━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+            ┏━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                 ━Open
             ┃                                                                      ┃
- ━━━┫EV2┣━━━┛                               Regeneration                           ┗━━━━━━━━━━━━━━━━━━ ━Closed (EV1 sur desc.)
-     Moving Train                                                                  :
+ ━━━┫SV2┣━━━┛                               Regeneration                           ┗━━━━━━━━━━━━━━━━ ━Closed 
             :                                                                      :
-            ┏━━━━━━━━━━━━┓                              ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+            :                                                                      :
+            ┏━━━━━━━━━━━━┓                              ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                 ━Open
             ┃            ┃                              ┃                          ┃
- ━━━┫EV3┣━━━┛    1min    ┗━━━━━━━━━━━...━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━━━ ━Closed (EV2 sur desc.)
+ ━━━┫SV3┣━━━┛    1min    ┗━━━━━━━━━━━...━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━ ━Closed 
             |< Backwash >|< Brine suction + Slow Rince >|<       Quick Rince      >|   
-`
+```
+
 
