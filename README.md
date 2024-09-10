@@ -1,5 +1,5 @@
 # Water-Softener
-**Dumb water softener with home assistant & espHome**
+##Dumb water softener with home assistant & espHome**
 
 The goal of this project is to describe how to wire a D1 Mini NodeMCU (ESP8266-12) to a water softener (CPED BiO 22 liters) and to configure espHome.
 
