@@ -91,12 +91,8 @@ ota:
 
 wifi:
   networks:
-  - ssid: "Abrivado"
-    password: "0096448211(("
-  - ssid: "RouteDeSardan@Gailhan"
-    password: "0096448211(("
-  - ssid: "RD308@gailhan"
-    password: "0096448211(("
+  - ssid: xxxxxx
+    password: xxxxxx
 
   manual_ip:
     # Set this to the IP of the ESP
