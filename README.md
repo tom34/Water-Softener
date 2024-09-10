@@ -13,18 +13,17 @@ The goal of this project is to describe how to wire a D1 Mini NodeMCU (ESP8266-1
     Valve 1: decompression
     Valve 2: moving train 
     Valve 3: brine suction
-
-                                                                                                                        ┏━━━━━━━━━━━━━┓       ━Open
-                                                                                                                        ┃             ┃
- ━━━┫EV1 Decompression┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━━━━━  ━Closed (EV3 sur desc.)
-                                                                                                                        ╎
-                                                                                                                        ╎
-                          ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
-                          ┃                                                                                             ┃
- ━━━┫EV2-Moving Train ┣━━━┛                                    Regeneration                                             ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV1 sur desc.)
-                          ╎                                                                                             ╎
-                          ╎                                                                                             ╎
-                          ┏━━━━━━━━━━━━━┓                                                    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
-                          ┃             ┃                                                    ┃                          ┃
- ━━━┫EV3-Brine suction┣━━━┛    1min     ┗━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV2 sur desc.)
-                          ╎<  Backwash >╎<             Brine suction + Slow Rince           >╎<       Quick Rince      >╎      
+                                                                                ,                       ┏━━━━━━━━━━━━━┓       ━Open
+                                                                                                        ┃             ┃
+ ━━━┫EV1 Decompression┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━━━━━  ━Closed (EV3 sur desc.)
+                                                                                                        ╎
+                                                                                                        ╎ 
+                          ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+                          ┃                                                                             ┃
+ ━━━┫EV2-Moving Train ┣━━━┛                               Regeneration                                  ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV1 sur desc.)
+                          ╎                                                                             ╎
+                          ╎                                                                             ╎
+                          ┏━━━━━━━━━━━━━┓                                    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+                          ┃             ┃                                    ┃                          ┃
+ ━━━┫EV3-Brine suction┣━━━┛    1min     ┗━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV2 sur desc.)
+                          ╎<  Backwash >╎<  Brine suction + Slow Rince      >╎<       Quick Rince      >╎      
