@@ -83,11 +83,11 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "Alb3I/84TlnMhdU+iOJ4H39v+L3PhE0ZJVA7BW0ArQU="
+    key: "xxxxxxxxxxx"
 
 ota:
   - platform: esphome
-    password: "ddffdb033efe83752d14c7752d496f4b"
+    password: "xxxxxxxxxxx"
 
 wifi:
   networks:
@@ -96,16 +96,16 @@ wifi:
 
   manual_ip:
     # Set this to the IP of the ESP
-    static_ip: 192.168.0.34
+    static_ip: 192.168.xx.xx
     # Set this to the IP address of the router. Often ends with .1
-    gateway: 192.168.0.1
+    gateway: 192.168.xx.xx
     # The subnet of the network. 255.255.255.0 works for most home networks.
     subnet: 255.255.255.0
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "compteur-eau MdP:12345678"
-    password: "12345678"
+    ssid: "compteur-eau"
+    password: "xxxxxxxxxxxx"
 
 
 #    ┏━━━━━━━━━━━━━━━━━━━━━┓
