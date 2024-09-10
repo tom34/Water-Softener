@@ -16,7 +16,7 @@ A softener use 3 valves to operate, each valve is dedicated to a specfic functio
 * Valve 3: brine suction
 
 
-`                                                                           ,                      ┏━━━━━━━━━━━━━┓       ━Open
+`                                                                                                  ┏━━━━━━━━━━━━━┓       ━Open
                                                                                                    ┃             ┃
  ━━━┫EV1 Decompression┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━━━━━  ━Closed (EV3 sur desc.)
                                                                                                    :
