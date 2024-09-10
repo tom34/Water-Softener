@@ -16,17 +16,19 @@ A softener use 3 valves to operate, each valve is dedicated to a specfic functio
 * Valve 3: brine suction
 
 
-                                                                                ,                       ┏━━━━━━━━━━━━━┓       ━Open
-                                                                                                        ┃             ┃
- ━━━┫EV1 Decompression┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━━━━━  ━Closed (EV3 sur desc.)
-                                                                                                        ╎
-                                                                                                        ╎ 
-                          ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
-                          ┃                                                                             ┃
- ━━━┫EV2-Moving Train ┣━━━┛                               Regeneration                                  ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV1 sur desc.)
-                          ╎                                                                             ╎
-                          ╎                                                                             ╎
-                          ┏━━━━━━━━━━━━━┓                                    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
-                          ┃             ┃                                    ┃                          ┃
- ━━━┫EV3-Brine suction┣━━━┛    1min     ┗━━━━━━╍┅┅━━━━━━━━━━━━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV2 sur desc.)
-                          ╎<  Backwash >╎<  Brine suction + Slow Rince      >╎<       Quick Rince      >╎      
+`                                                                           ,                      ┏━━━━━━━━━━━━━┓       ━Open
+                                                                                                   ┃             ┃
+ ━━━┫EV1 Decompression┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛     1min    ┗━━━━━  ━Closed (EV3 sur desc.)
+                                                                                                   :
+                                                                                                   : 
+                          ┏━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+                          ┃                                                                        ┃
+ ━━━┫EV2-Moving Train ┣━━━┛                               Regeneration                             ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV1 sur desc.)
+                          :                                                                        :
+                          :                                                                        :
+                          ┏━━━━━━━━━━━━━┓                               ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                     ━Open
+                          ┃             ┃                               ┃                          ┃
+ ━━━┫EV3-Brine suction┣━━━┛    1min     ┗━━━━━━━━━━━...━━━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━━━━━━ ━Closed (EV2 sur desc.)
+                          |<  Backwash >|<  Brine suction + Slow Rince >|<       Quick Rince      >|   
+`
+
