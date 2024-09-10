@@ -7,3 +7,8 @@ Hardware required:
 + D1 Mini NodeMCU (ESP8266-12): [link to Amazon](https://www.amazon.fr/gp/product/B01N9RXGHY/ref=pe_3044141_189395771_pd_te_s_qp_im?_encoding=UTF8&pd_rd_i=B01N9RXGHY&pd_rd_r=AZ70N9HMVFQYPZTPVFX5&pd_rd_w=o2N3j&pd_rd_wg=VCi3Y)<br/>
 + 4 Octocoupled relays board : [link to Amazon](https://www.amazon.fr/gp/product/B078Q8S9S9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 ![](https://github.com/tom34/Water-Softener/blob/c4f95d90308fbb6db4f89fb76a1948137767a7ac/pics-small/4%20relays%20module-XS.png)<br/>
+
+| Hardware required  |  |  |
+| ------------- | ------------- | ------------- |
+| D1 Mini NodeMCU (ESP8266-12)  | Content Cell  |
+| 4 Octocoupled relays board  | Content Cell  |
