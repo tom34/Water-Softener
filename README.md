@@ -24,8 +24,8 @@ A softener use 3 solenoid valves to operate, each valve is dedicated to a specfi
                                                                                    : 
             ┏━━━━━━━━━━━━━━━━━━━━━━━━━...━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                ━Open
             ┃                                                                      ┃
- ━━━┫SV2┣━━━┛                               Regeneration                           ┗━━━━━━━━━━━━━━━ ━Closed 
-            :                                                                      :
+ ━━━┫SV2┣━━━┛<                             Regeneration                           >┗━━━━━━━━━━━━━━━ ━Closed 
+            :                                                                      : 
             :                                                                      :
             ┏━━━━━━━━━━━━┓                              ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                ━Open
             ┃            ┃                              ┃                          ┃
