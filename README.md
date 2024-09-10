@@ -30,7 +30,7 @@ A softener use 3 solenoid valves to operate, each valve is dedicated to a specfi
           ┏━━━━━━━━━━━━┓                              ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓                ━Open
           ┃            ┃                              ┃                          ┃
  ━┫SV3┣━━━┛    1min    ┗━━━━━━━━━━━━...━━━━━━━━━━━━━━━┛           2min           ┗━━━━━━━━━━━━━━━ ━Closed 
-            |< Backwash >|< Brine suction & Slow Rince >|<       Quick Rince      >|   
+          |< Backwash >|< Brine suction & Slow Rince >|<       Quick Rince      >|   
 ```
 
 
